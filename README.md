@@ -2,7 +2,7 @@
 
 # Next.js Portfolio Template
 
-A production-ready, multilingual portfolio template built with **Next.js 16**, **React 19**, and **TypeScript 5**.
+A production-ready, multilingual frontend template built with **Next.js 16**, **React 19**, and **TypeScript 5**.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
