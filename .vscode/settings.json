@@ -1,0 +1,4 @@
+{
+    "tailwindCSS.lint.invalidScreen": "ignore",
+    "tailwindCSS.lint.suggestCanonicalClasses": "ignore"
+}

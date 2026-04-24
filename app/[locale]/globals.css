@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+	.custom-scrollbar::-webkit-scrollbar {
+		width: 8px;
+	}
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		background-color: var(--color-scrollbar-thumb);
+		border-radius: 9999px;
+	}
+	.custom-scrollbar::-webkit-scrollbar-track {
+		background-color: var(--color-scrollbar-track);
+	}
+}
+
+@utility flex-center {
+    @apply flex justify-center items-center gap-2;  
+}
+
+@utility flex-between {
+    @apply flex justify-between items-center gap-2; 
+}
+
+@utility flex-align {
+    @apply flex items-center gap-2; 
+}
+
+@utility flex-center-col {
+    @apply flex flex-col justify-center items-center; 
+}
+
+@utility invisible-button {
+    @apply rounded-md px-3.5 py-2.5 text-sm font-semibold
+        bg-slate-900 text-white shadow-xs hover:bg-slate-800 
+        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400 
+        dark:bg-slate-800 dark:hover:bg-slate-700 dark:focus-visible:outline-slate-400 
+        transition-colors duration-200
+}
+
+:root {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+
+	--font-mono: "JetBrains Mono", monospace;
+}
+
+.dark {
+	--background: #0a0a0a;
+	--foreground: #ededed;
+}
+
+.light {
+	--background: #ffffff;
+	--foreground: #000000;
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+
+	/* use the custom font var */
+	font-family: var(--font-mono);
+}
