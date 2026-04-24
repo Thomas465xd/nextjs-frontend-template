@@ -1,6 +1,6 @@
 <div align="center">
 
-# Next.js Portfolio Template
+# Next.js Frontend Template
 
 A production-ready, multilingual frontend template built with **Next.js 16**, **React 19**, and **TypeScript 5**.
 
